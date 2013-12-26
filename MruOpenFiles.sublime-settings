@@ -1,5 +1,7 @@
 {
         // Time it will wait before it moves the current
         // view to the top of the tabs stack
-        "move_to_top_timeout": 3000
+        "move_to_top_timeout": 3000,
+        "max_open_tabs": 10,
+        "limit_tabs": false
 }
