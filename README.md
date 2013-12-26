@@ -1,4 +1,4 @@
-=== MRU Open Files
+## MRU Open Files
 
 This plugin for Sublime Text 3 is intended to reorder tabs/openFiles in the MRU ctrl+tab order. This way, when you are pressing ctrl+tab, you know where you are going. It's intended to emulate the ctrl+tab popup that other editors have.
 
@@ -8,7 +8,7 @@ I will try to do something with AHK to send a command when ctrl is down and anot
 
 Also, my Python knowledge is close to 0. I put this togeather by looking at other plugins. So don't expect much.
 
-== How is it working now
+## How is it working now
 
 Since we can't really make it behave like we would wish. The behaviour that is doing right now is: after you focus a new tab, after X seconds (3 by default), the tab is moved to first place. It works, pretty well.
 
@@ -16,6 +16,6 @@ Anyway, here are some things that don't work:
 
 - In the open files list, after calling `window.set_view_index` the file won't get highlighted. But I think this is a ST3 bug.
 
-== Sublime Text 2
+## Sublime Text 2
 
-Never tried it in ST2. Doubt it will work. And I don't really know the differences in the APIs.
+Never tried it in ST2. Doubt it will work. And I don't really know the differences between the APIs.
