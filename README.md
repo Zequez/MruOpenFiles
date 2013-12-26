@@ -10,10 +10,8 @@ Also, my Python knowledge is close to 0. I put this togeather by looking at othe
 
 == How is it working now
 
-Since we can't really make it behave like we would wish. The behaviour that is doing right now is: after you focus a new tab, after 3 seconds, the tab is moved to first place. It works, pretty well.
+Since we can't really make it behave like we would wish. The behaviour that is doing right now is: after you focus a new tab, after X seconds (3 by default), the tab is moved to first place. It works, pretty well.
 
 Anyway, here are some things that don't work:
 
 - In the open files list, after calling `window.set_view_index` the file won't get highlighted. But I think this is a ST3 bug.
-
-- It doesn't have any settings to set the delay.

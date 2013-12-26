@@ -1,7 +1,6 @@
 import sublime, sublime_plugin
 import time, functools
 
-
 # Gonna do something with AutoHotkey and this
 # class MruStopListeningCommand(sublime_plugin.TextCommand):
 #   def run(self, edit):
@@ -19,9 +18,7 @@ class MruOpenFilesListener(sublime_plugin.EventListener):
   def on_activated(self, view):
     self.pending = self.pending + 1  
     # Ask for handleTimeout to be called in 5000ms  
-    sublime.set_timeout(functools.partial(self.handle_timeout, view), 3000)  
-
-
+    sublime.set_timeout(functools.partial(self.handle_timeout, view), settings.get('move_to_top_timeout'))
       
   def handle_timeout(self, view):  
       self.pending = self.pending - 1  
@@ -32,3 +29,7 @@ class MruOpenFilesListener(sublime_plugin.EventListener):
     
   def set_view_as_first(self, view):
     sublime.active_window().set_view_index(view, sublime.active_window().active_group(), 0)
+
+def plugin_loaded():
+  global settings
+  settings = sublime.load_settings('MruOpenFiles.sublime-settings')
