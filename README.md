@@ -15,3 +15,7 @@ Since we can't really make it behave like we would wish. The behaviour that is d
 Anyway, here are some things that don't work:
 
 - In the open files list, after calling `window.set_view_index` the file won't get highlighted. But I think this is a ST3 bug.
+
+== Sublime Text 2
+
+Never tried it in ST2. Doubt it will work. And I don't really know the differences in the APIs.
